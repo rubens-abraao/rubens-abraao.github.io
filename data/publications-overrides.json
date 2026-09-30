@@ -1,0 +1,54 @@
+{
+  "_como_usar": {
+    "hide": "Lista de títulos ou DOIs que NÃO devem aparecer no site.",
+    "edit": "Corrige um trabalho encontrado automaticamente. Chave = título como vem do ORCID/OpenAlex. Campos: title, venue, year, url, group ('journals', 'conferences', 'preprints' ou 'datasets').",
+    "add": "Trabalhos que ainda não estão no ORCID/OpenAlex. Use o título EXATO da publicação. Campos: title, year, venue, type ('journal-article', 'conference-paper', 'preprint' ou 'dataset'), url ou doi. Quando o trabalho aparecer nas bases, é unificado automaticamente pelo título ou DOI.",
+    "dois": "DOIs de trabalhos seus que não estão ligados ao seu ORCID. Título, evento e ano são buscados automaticamente.",
+    "openalex_author_ids": "Perfis do OpenAlex com seu nome mas sem ORCID vinculado (ex.: 'Rubens A. da S. Sousa'). Tudo publicado nesses perfis entra no site."
+  },
+  "openalex_author_ids": [
+    "A5069563271"
+  ],
+  "dois": [
+    "10.5753/sbseg_estendido.2025.11858"
+  ],
+  "hide": [],
+  "edit": {},
+  "add": [
+    {
+      "title": "Criação de casos de teste a partir de critérios de aceitação",
+      "year": 2025,
+      "venue": "Anais do 37º Incitel (Inatel)",
+      "type": "conference-paper",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2025.pdf#page=218"
+    },
+    {
+      "title": "Percepções de Estudantes de Tecnologia da Informação sobre a Utilização Ética do ChatGPT no Ensino",
+      "year": 2026,
+      "venue": "Anais do 38º Incitel (Inatel)",
+      "type": "conference-paper",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=96"
+    },
+    {
+      "title": "Checklist-Based Code Review Process: An Experience Report",
+      "year": 2026,
+      "venue": "Anais do 38º Incitel (Inatel)",
+      "type": "conference-paper",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=113"
+    },
+    {
+      "title": "Comparing Package-Based and Sprint-Based Delivery Structures: An Experience Report in an RD&I Environment",
+      "year": 2026,
+      "venue": "Anais do 38º Incitel (Inatel)",
+      "type": "conference-paper",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=119"
+    },
+    {
+      "title": "O Papel do Laboratório de PD&I no Desenvolvimento de Competências entre a Prática e a Teoria Durante a Graduação: Um Relato de Experiência",
+      "year": 2026,
+      "venue": "Anais do 38º Incitel (Inatel)",
+      "type": "conference-paper",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=125"
+    }
+  ]
+}

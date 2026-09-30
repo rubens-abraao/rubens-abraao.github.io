@@ -1,0 +1,150 @@
+{
+  "source": "ORCID 0000-0003-3385-5913 + OpenAlex",
+  "journals": [
+    {
+      "year": 2026,
+      "venue": "Revista Eletrônica de Iniciação Científica em Computação",
+      "title": "Uma Avaliação Experimental do Uso de BDD na Automação de Testes de Segurança",
+      "url": "https://doi.org/10.5753/reic.2026.7750"
+    },
+    {
+      "year": 2025,
+      "venue": "Revista Eletrônica de Iniciação Científica em Computação",
+      "title": "Modelos de Inteligência Artificial para Predição de Evasão escolar: Uma revisão sistemática",
+      "url": "https://doi.org/10.5753/reic.2025.5523"
+    },
+    {
+      "year": 2025,
+      "venue": "Revista Eletrônica de Iniciação Científica em Computação",
+      "title": "Um Mapeamento Sistemático sobre Técnicas de Classificação e Categorização de Bugs em Software",
+      "url": "https://doi.org/10.5753/reic.2025.6850"
+    },
+    {
+      "year": 2023,
+      "venue": "Brazilian Journal of Development",
+      "title": "Application of the graph model for conflict resolution in the truck driver strike in Brazil: a Case Study",
+      "url": "https://doi.org/10.34117/bjdv9n2-130"
+    }
+  ],
+  "conferences": [
+    {
+      "year": 2026,
+      "venue": "Anais do 38º Incitel",
+      "title": "Checklist-Based Code Review Process: An Experience Report",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=113"
+    },
+    {
+      "year": 2026,
+      "venue": "Anais do 38º Incitel",
+      "title": "Comparing Package-Based and Sprint-Based Delivery Structures: An Experience Report in an RD&I Environment",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=119"
+    },
+    {
+      "year": 2026,
+      "venue": "SEMISH",
+      "title": "MIRA: Automated Generation of Measurable Non-Functional Requirements and Test Scenarios Using Multi-Agent Systems and RAG",
+      "url": "https://doi.org/10.5753/semish.2026.23879"
+    },
+    {
+      "year": 2026,
+      "venue": "Anais do 38º Incitel",
+      "title": "O Papel do Laboratório de PD&I no Desenvolvimento de Competências entre a Prática e a Teoria Durante a Graduação: Um Relato de Experiência",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=125"
+    },
+    {
+      "year": 2026,
+      "venue": "Anais do 38º Incitel",
+      "title": "Percepções de Estudantes de Tecnologia da Informação sobre a Utilização Ética do ChatGPT no Ensino",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=96"
+    },
+    {
+      "year": 2025,
+      "venue": "Anais do 37º Incitel",
+      "title": "Criação de casos de teste a partir de critérios de aceitação",
+      "url": "https://inatel.br/incitel/documents/anais-incitel-2025.pdf#page=218"
+    },
+    {
+      "year": 2025,
+      "venue": "SBSeg (Anais Estendidos)",
+      "title": "Revisão Multifocal sobre ferramentas de teste e estratégias de segurança de APIs em microsserviços",
+      "url": "https://doi.org/10.5753/sbseg_estendido.2025.11858"
+    },
+    {
+      "year": 2025,
+      "venue": "SBSeg",
+      "title": "Simplificação da análise forense de logs utilizando Grandes Modelos de Linguagem com a técnica RAG",
+      "url": "https://doi.org/10.5753/sbseg.2025.10682"
+    },
+    {
+      "year": 2024,
+      "venue": "Anais do Simpósio Brasileiro de Pesquisa Operacional",
+      "title": "Modeling Brazilian Government’s COVID-19 Vaccine Procurement: A GMCR Approach.",
+      "url": "https://doi.org/10.59254/sbpo-2024-193749"
+    },
+    {
+      "year": 2024,
+      "venue": "Communications in computer and information science",
+      "title": "NOTORIOUS: AgNOsTic sOftware aRchItecture fOr aUtomated DiagnoSis for GPONs",
+      "url": "https://doi.org/10.1007/978-3-031-75147-9_18"
+    },
+    {
+      "year": 2020,
+      "venue": "I Congresso Internacional Virtual de Pesquisa do IFCE - CONINP - IFCE",
+      "title": "CONSTRUÇÃO DE UM SISTEMA WEB PARA MELHORAMENTO DE AVALIAÇÃO DO TESTE DE DESENVOLVIMENTO MOTOR BRUTO - 3° EDIÇÃO (TGMD 3)",
+      "url": ""
+    },
+    {
+      "year": 2020,
+      "venue": "I Congresso Cearense em Avaliação Educacional - UNIVERSIDADE ESTADUAL DO CEARÁ",
+      "title": "CONTRUÇÃO DE UM SISTEMA DE AVALIAÇÃO EDUCACIONAL (AVALIA)",
+      "url": ""
+    },
+    {
+      "year": 2020,
+      "venue": "I Congresso Internacional Virtual de Pesquisa do IFCE - CONINP - IFCE",
+      "title": "DESENVOLVIMENTO DE FERRAMENTA WEB PARA AUTOMAÇÃO NA AVALIAÇÃO MOVEMENT ASSESSMENT BATTERY FOR CHILDREN (MABC-2)",
+      "url": ""
+    },
+    {
+      "year": 2020,
+      "venue": "I Congresso Internacional Virtual de Pesquisa do IFCE - CONINP - IFCE",
+      "title": "ESTUDO DE TECNOLOGIAS PARA O ATENDIMENTO A EMERGÊNCIAS",
+      "url": ""
+    },
+    {
+      "year": 2020,
+      "venue": "I Congresso Internacional Virtual de Pesquisa do IFCE - IFCE",
+      "title": "IMPLEMENTAÇÃO DE INTELIGÊNCIA ARTIFICIAL PARA ANÁLISES DE VÍDEO DO TESTE DE DESENVOLVIMENTO MOTOR BRUTO 3ª EDIÇÃO (TGMD-3)",
+      "url": ""
+    }
+  ],
+  "preprints": [
+    {
+      "year": 2026,
+      "venue": "Zenodo",
+      "title": "AstridBot: Evaluation of an AI-Enabled Conversational System for Supporting Novice Use of Nmap",
+      "url": "https://doi.org/10.5281/zenodo.21828439"
+    }
+  ],
+  "datasets": [
+    {
+      "year": 2026,
+      "venue": "Zenodo",
+      "title": "Dados do estudo sobre chatbot de recomendação de ferramentas de teste de segurança de APIs",
+      "url": "https://doi.org/10.5281/zenodo.20647556"
+    },
+    {
+      "year": 2026,
+      "venue": "Zenodo",
+      "title": "Data from the study on the API security testing tools catalog",
+      "url": "https://doi.org/10.5281/zenodo.17772958"
+    },
+    {
+      "year": 2025,
+      "venue": "Zenodo",
+      "title": "Dados do estudo sobre catálogo de ferramentas de teste de segurança de APIs",
+      "url": "https://doi.org/10.5281/zenodo.17772959"
+    }
+  ],
+  "updated": "2026-09-30"
+}

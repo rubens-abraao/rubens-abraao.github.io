@@ -1,0 +1,40 @@
+name: Atualizar publicações
+
+# Busca os trabalhos no ORCID + OpenAlex e atualiza data/publications.json.
+# Se algo mudou, faz commit — o GitHub Pages republica o site sozinho.
+on:
+  schedule:
+    - cron: "0 9 * * 1" # toda segunda-feira, 06:00 (horário de Brasília)
+  workflow_dispatch: # botão "Run workflow" na aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-publications
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Buscar publicações
+        run: python scripts/fetch_publications.py
+
+      - name: Commit se houver mudanças
+        run: |
+          if git diff --quiet -- data/publications.json; then
+            echo "Sem novidades."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/publications.json
+          git commit -m "Atualiza publicações (ORCID + OpenAlex)"
+          git push

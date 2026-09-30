@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Portfólio - Rubens Abraão</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Rubens Abraão — mestrando em Ciência da Computação e pesquisador pela UECE.">
+  <link rel="icon" href="assets/icons/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="topo">
+  <div class="page">
+    <!-- Ilustrações decorativas (somente desktop) -->
+    <div class="doodles" aria-hidden="true">
+      <div class="doodle doodle--1"><img src="assets/icons/doodle-1.svg" width="135" height="163" alt=""></div>
+      <div class="doodle doodle--2"><img src="assets/icons/doodle-2.svg" width="112" height="193" alt=""></div>
+      <div class="doodle doodle--3"><img src="assets/icons/doodle-3.svg" width="132" height="185" alt=""></div>
+      <div class="doodle doodle--4"><img src="assets/icons/doodle-4.svg" width="133" height="116" alt=""></div>
+      <div class="doodle doodle--5"><img src="assets/icons/doodle-5.svg" width="116" height="158" alt=""></div>
+    </div>
+
+    <main class="container">
+      <!-- Navegação -->
+      <header class="nav">
+        <a class="nav__brand" href="mailto:eurubens.dev@gmail.com">
+          <img src="assets/icons/logo-mark.svg" width="15" height="22" alt="">
+          <span>eurubens.dev@gmail.com</span>
+        </a>
+        <div class="nav__actions">
+          <div class="lang" role="group" data-i18n-attr="aria-label:lang.label">
+            <button type="button" data-lang="pt" lang="pt-BR">PT</button>
+            <button type="button" data-lang="en" lang="en">EN</button>
+          </div>
+          <button class="nav__toggle" type="button" data-i18n-attr="aria-label:nav.open" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+        <nav class="nav__menu" id="menu" hidden>
+          <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+          <a href="#pesquisa" data-i18n="nav.research">Pesquisa</a>
+          <a href="#publicacoes" data-open="pubs-modal" data-i18n="nav.publications">Artigos e publicações</a>
+          <a href="#eventos" data-i18n="nav.events">Eventos e palestras</a>
+          <a href="#contato" data-i18n="nav.contact">Contato</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__top">
+          <div class="avatar">
+            <img class="avatar__bg" src="assets/img/avatar-bg.jpg" alt="">
+            <img class="avatar__photo" src="assets/img/avatar.png" data-i18n-attr="alt:hero.photo" alt="Foto de Rubens Abraão">
+          </div>
+          <h1 class="hero__title" data-i18n-html="hero.title">
+            Olá! Sou <strong>Rubens Abraão,</strong> mestrando em
+            <span class="hero__accent"><strong>Ciência da Computação e pesquisador</strong> pela <strong>UECE</strong>.</span>
+          </h1>
+        </div>
+        <p class="hero__bio" id="hero-bio"></p>
+        <div class="hero__cta">
+          <a class="btn" href="#contato" data-i18n="hero.cta">Entrar em contato</a>
+          <p data-i18n="hero.ctaText"></p>
+        </div>
+      </section>
+
+      <!-- Cards: leitura, música, mascote -->
+      <section class="highlights">
+        <article class="card card--reading">
+          <span class="tag"><img src="assets/icons/book.svg" width="13.5" height="10.33" alt=""><span data-i18n="reading.tag">Leitura atual</span></span>
+          <h3 class="card__title">Lord of <br>Mysteries</h3>
+          <p class="card__meta">Cuttlefish That <br>Loves Diving <br>(Yuan Ye)</p>
+          <div class="book-cover"><img src="assets/img/book-cover.png" data-i18n-attr="alt:reading.cover" alt=""></div>
+        </article>
+
+        <article class="card card--listening" id="music">
+          <div class="player__head">
+            <span class="tag"><img src="assets/icons/music.svg" width="12" height="10.5" alt=""><span data-i18n="listening.tag">O que estou ouvindo</span></span>
+            <a class="player__external" data-playlist href="#" target="_blank" rel="noopener" data-i18n="listening.external">YouTube Music ↗</a>
+          </div>
+          <div class="player">
+            <div class="player__cover" data-player="toggle">
+              <img src="assets/img/album-cover.jpg" alt="">
+              <div id="yt-player"></div>
+            </div>
+            <div class="player__info">
+              <h3 class="card__title" id="player-title">RUBEN'S THEME</h3>
+              <p class="card__meta" id="player-artist">Soso (Remix), Ozuna e Omah Lay</p>
+              <div class="player__progress">
+                <div class="player__bar" id="player-bar" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-attr="aria-label:player.seek"><span id="player-fill"></span></div>
+                <span class="player__time" id="player-time">00:00</span>
+              </div>
+              <div class="player__controls">
+                <div class="player__buttons">
+                  <button type="button" data-player="prev" data-i18n-attr="aria-label:player.prev"><img src="assets/icons/prev.svg" width="8.75" height="10.51" alt=""></button>
+                  <button type="button" data-player="toggle" id="player-toggle" aria-label="Tocar"><img src="assets/icons/play.svg" width="10" height="12" alt=""></button>
+                  <button type="button" data-player="next" data-i18n-attr="aria-label:player.next"><img src="assets/icons/next.svg" width="8.75" height="10.51" alt=""></button>
+                </div>
+                <button type="button" data-player="mute" id="player-mute" aria-pressed="false" aria-label="Silenciar"><img src="assets/icons/extra.svg" width="15" height="10.74" alt=""></button>
+              </div>
+              <p class="player__hint" id="player-hint" data-i18n="player.hint" hidden>Clique em qualquer lugar da página para ouvir</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--mascot" aria-hidden="true">
+          <img src="assets/icons/mascot-card.svg" width="140" height="194" alt="">
+        </article>
+      </section>
+
+      <!-- Labs & Partners -->
+      <section class="logos">
+        <h2 class="logos__title" data-i18n-html="labs.title">LABS &amp; PARTNERS</h2>
+        <div class="logos__row logos__row--labs">
+          <img src="assets/img/logo-lampi.png" width="70" height="70" alt="LAMPI">
+          <img src="assets/img/logo-lab-2.png" width="132" height="36" alt="Instituto Federal do Ceará — Campus Canindé">
+          <img src="assets/img/logo-gesad.png" width="126" height="27" alt="GESAD">
+          <img src="assets/img/logo-lab-4.png" width="158" height="42" alt="Universidade Estadual do Ceará">
+        </div>
+      </section>
+
+      <!-- Experiência (itens renderizados a partir de js/data.js) -->
+      <section class="grid-2" id="experiencia">
+        <article class="card card--exp" role="button" tabindex="0" aria-haspopup="dialog" data-exp="academic">
+          <span class="tag"><img src="assets/icons/graduation-cap-sm.svg" width="11" height="11" alt=""><span data-i18n="exp.academic">Experiência Acadêmica</span></span>
+          <ol class="timeline" data-timeline="academic"></ol>
+        </article>
+        <article class="card card--exp" role="button" tabindex="0" aria-haspopup="dialog" data-exp="technical">
+          <span class="tag"><img src="assets/icons/briefcase.svg" width="10.5" height="10.5" alt=""><span data-i18n="exp.technical">Experiência Técnica</span></span>
+          <ol class="timeline" data-timeline="technical"></ol>
+        </article>
+      </section>
+
+      <!-- Publicações + Pesquisa -->
+      <section class="research" id="pesquisa">
+        <button class="folder" type="button" data-open="pubs-modal" id="publicacoes">
+          <span class="folder__tab"></span>
+          <span class="folder__body">
+            <span class="tag tag--light"><img src="assets/icons/book.svg" width="13.5" height="10.33" alt=""><span data-i18n="pubs.tag">Artigos e publicações</span></span>
+          </span>
+        </button>
+
+        <article class="card card--research">
+          <span class="tag"><img src="assets/icons/file-search.svg" width="12" height="12" alt=""><span data-i18n="research.tag">Minhas linhas de pesquisa</span></span>
+          <h3 class="research__title" id="research-title"></h3>
+          <p class="research__text" id="research-text"></p>
+          <div class="segmented" role="tablist" data-i18n-attr="aria-label:research.tabs"></div>
+        </article>
+      </section>
+
+      <!-- Eventos e palestras -->
+      <section class="card card--events" id="eventos">
+        <span class="tag"><img src="assets/icons/calendar.svg" width="12" height="10" alt=""><span data-i18n="events.tag">Eventos e palestras</span></span>
+        <div class="carousel">
+          <button class="carousel__nav" type="button" data-dir="-1" data-i18n-attr="aria-label:events.prev"><img src="assets/icons/caret-left.svg" width="24" height="24" alt=""></button>
+          <div class="carousel__track">
+            <article class="event">
+              <img src="assets/img/event-sinecom.png" alt="" loading="lazy">
+              <div class="event__body"><p>2025 · Fortaleza</p><h3>SINECOM&nbsp; (TGMD-3 pose estimation)</h3></div>
+            </article>
+            <article class="event">
+              <img src="assets/img/event-sbseg.png" alt="" loading="lazy">
+              <div class="event__body"><p>2025 · Foz do Iguaçu</p><h3>SBSeg&nbsp; (LLM+RAG forensics)</h3></div>
+            </article>
+            <article class="event">
+              <img src="assets/img/event-eic.png" alt="" loading="lazy">
+              <div class="event__body"><p>2024 · Fortaleza</p><h3>EIC-IFCE&nbsp; (GPS vs. camera tracking)</h3></div>
+            </article>
+          </div>
+          <button class="carousel__nav" type="button" data-dir="1" data-i18n-attr="aria-label:events.next"><img src="assets/icons/caret-right.svg" width="24" height="24" alt=""></button>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="card" id="contato">
+        <span class="tag"><img src="assets/icons/contact.svg" width="10" height="10" alt=""><span data-i18n="contact.tag">Informações de contato</span></span>
+        <div class="contacts">
+          <a class="contact" href="mailto:eurubens.dev@gmail.com">
+            <img src="assets/icons/at.svg" width="24" height="24" alt="">
+            <span><small data-i18n="contact.email">E-mail</small>eurubens.dev@gmail.com</span>
+          </a>
+          <a class="contact" href="https://orcid.org/0000-0003-3385-5913" target="_blank" rel="noopener">
+            <img src="assets/icons/files.svg" width="24" height="24" alt="">
+            <span><small>Orcid</small>https://orcid.org/0000-0003-3385-5913</span>
+          </a>
+          <a class="contact" href="https://github.com/rubens-abraao" target="_blank" rel="noopener">
+            <img src="assets/icons/tree-structure.svg" width="24" height="24" alt="">
+            <span><small>Github</small>https://github.com/rubens-abraao</span>
+          </a>
+          <a class="contact" href="http://lattes.cnpq.br/9224139296840890" target="_blank" rel="noopener">
+            <img src="assets/icons/graduation-cap.svg" width="24" height="24" alt="">
+            <span><small>Lattes</small>http://lattes.cnpq.br/9224139296840890</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Parcerias P&D -->
+      <section class="logos">
+        <h2 class="logos__title" data-i18n-html="partners.title">ONDE JÁ ATUEI COM P&amp;D</h2>
+        <div class="logos__row">
+          <img src="assets/img/partner-1.png" width="148" height="35" alt="Ministério da Educação — Governo do Brasil">
+          <img src="assets/img/partner-2.png" width="167" height="26" alt="Furukawa Electric Group">
+          <img src="assets/img/partner-3.png" width="117" height="27" alt="Lightera">
+          <img src="assets/img/partner-4.png" width="91" height="27" alt="Dell">
+          <img src="assets/img/partner-5.png" width="51" height="49" alt="ABIN">
+          <img src="assets/img/partner-6.png" width="49" height="49" alt="HP">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" width="16.57" height="13.33" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" width="9.38" height="17.97" alt=""></a>
+        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" width="20.1" height="20" alt=""></a>
+        <a href="https://github.com/rubens-abraao" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/icons/github.svg" width="19.22" height="18.67" alt=""></a>
+      </div>
+      <nav class="footer__links">
+        <a href="#contato" data-i18n="footer.contact">Contato</a>
+        <a href="#" data-i18n="footer.privacy">Política de privacidade</a>
+        <a class="footer__top" href="#topo"><img src="assets/icons/arrow-up.svg" width="12" height="12" alt=""><span data-i18n="footer.top">Voltar ao topo</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal: Artigos e publicações -->
+  <dialog class="modal modal--pubs" id="pubs-modal" aria-labelledby="pubs-modal-tag">
+    <div class="modal__head">
+      <span class="tag" id="pubs-modal-tag"><img src="assets/icons/book.svg" width="13.5" height="10.33" alt=""><span data-i18n="pubs.tag">Artigos e publicações</span></span>
+      <div class="modal__tools">
+        <div class="filter">
+          <button class="icon-btn" type="button" id="pubs-filter-btn" aria-haspopup="true" aria-expanded="false" data-i18n-attr="aria-label:pubs.filter">
+            <svg width="12" height="12" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M230.6 49.53A15.81 15.81 0 0 0 216 40H40a16 16 0 0 0-11.81 26.76l.08.09L96 139.17V216a16 16 0 0 0 24.87 13.32l32-21.34a16 16 0 0 0 7.13-13.32v-55.49l67.74-72.32.08-.09a15.8 15.8 0 0 0 2.78-17.23ZM40 56Zm106.18 74.58A8 8 0 0 0 144 136v58.66L112 216v-80a8 8 0 0 0-2.16-5.47L40 56h176Z"/></svg>
+          </button>
+          <div class="filter__menu" id="pubs-filter-menu" hidden></div>
+        </div>
+        <button class="icon-btn" type="button" data-close data-i18n-attr="aria-label:modal.close">
+          <svg width="12" height="12" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128 50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal__body" id="pubs-body"></div>
+  </dialog>
+
+  <!-- Modal: Experiência -->
+  <dialog class="modal modal--exp" id="exp-modal" aria-labelledby="exp-modal-tag">
+    <div class="modal__head">
+      <span class="tag" id="exp-modal-tag"><img src="assets/icons/briefcase.svg" width="10.5" height="10.5" alt=""><span></span></span>
+      <button class="icon-btn" type="button" data-close data-i18n-attr="aria-label:modal.close">
+        <svg width="12" height="12" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128 50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"/></svg>
+      </button>
+    </div>
+    <ol class="accordion" id="exp-list"></ol>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
