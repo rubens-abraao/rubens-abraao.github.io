@@ -123,7 +123,7 @@
       "year": 2026,
       "venue": "Zenodo",
       "title": "AstridBot: Evaluation of an AI-Enabled Conversational System for Supporting Novice Use of Nmap",
-      "url": "https://doi.org/10.5281/zenodo.21828439"
+      "url": "https://doi.org/10.5281/zenodo.21828438"
     }
   ],
   "datasets": [
@@ -134,17 +134,11 @@
       "url": "https://doi.org/10.5281/zenodo.20647556"
     },
     {
-      "year": 2026,
-      "venue": "Zenodo",
-      "title": "Data from the study on the API security testing tools catalog",
-      "url": "https://doi.org/10.5281/zenodo.17772958"
-    },
-    {
       "year": 2025,
       "venue": "Zenodo",
       "title": "Dados do estudo sobre catálogo de ferramentas de teste de segurança de APIs",
-      "url": "https://doi.org/10.5281/zenodo.17772959"
+      "url": "https://doi.org/10.5281/zenodo.17772958"
     }
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-10-12"
 }
