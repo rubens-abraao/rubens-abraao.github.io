@@ -65,13 +65,13 @@
     },
     {
       "year": 2025,
-      "venue": "SBSeg (Anais Estendidos)",
+      "venue": "Simpósio Brasileiro de Cibersegurança",
       "title": "Revisão Multifocal sobre ferramentas de teste e estratégias de segurança de APIs em microsserviços",
       "url": "https://doi.org/10.5753/sbseg_estendido.2025.11858"
     },
     {
       "year": 2025,
-      "venue": "SBSeg",
+      "venue": "Simpósio Brasileiro de Cibersegurança",
       "title": "Simplificação da análise forense de logs utilizando Grandes Modelos de Linguagem com a técnica RAG",
       "url": "https://doi.org/10.5753/sbseg.2025.10682"
     },
@@ -140,5 +140,5 @@
       "url": "https://doi.org/10.5281/zenodo.17772958"
     }
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-11-02"
 }
