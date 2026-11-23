@@ -29,6 +29,18 @@
   "conferences": [
     {
       "year": 2026,
+      "venue": "",
+      "title": "Accountability in Agentic Secure Software Development Life Cycles: Challenges, Degradation Scenarios, and Governance Principles",
+      "url": "https://doi.org/10.5753/se4as.2026.33008"
+    },
+    {
+      "year": 2026,
+      "venue": "",
+      "title": "Beyond Task Completion: Product and Human-Agent Process Quality in Agentic Software Engineering",
+      "url": "https://doi.org/10.5753/se4as.2026.33009"
+    },
+    {
+      "year": 2026,
       "venue": "Anais do 38º Incitel",
       "title": "Checklist-Based Code Review Process: An Experience Report",
       "url": "https://inatel.br/incitel/documents/anais-incitel-2026.pdf#page=113"
@@ -134,11 +146,17 @@
       "url": "https://doi.org/10.5281/zenodo.20647556"
     },
     {
+      "year": 2026,
+      "venue": "Zenodo",
+      "title": "LLaJA – Prompts for LLM-based generation and judging of REST API authorization test cases (VAmPI)",
+      "url": "https://doi.org/10.5281/zenodo.24151350"
+    },
+    {
       "year": 2025,
       "venue": "Zenodo",
-      "title": "Dados do estudo sobre catálogo de ferramentas de teste de segurança de APIs",
+      "title": "Data from the study on the API security testing tools catalog",
       "url": "https://doi.org/10.5281/zenodo.17772958"
     }
   ],
-  "updated": "2026-11-02"
+  "updated": "2026-11-23"
 }
